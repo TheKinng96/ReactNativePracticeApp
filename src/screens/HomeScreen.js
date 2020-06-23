@@ -6,13 +6,19 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Button 
         onPress={() => navigation.navigate('Components')}
-        title="Book Page" />
+        title="Book Page" 
+        style={styles.buttonComponent}
+        />
       <Button 
         onPress={() => navigation.navigate('List')}
-        title="List" />
+        title="List" 
+        style={styles.buttonComponent}
+        />
       <Button 
         onPress={() => navigation.navigate('Image')}
-        title="Image Screen" />
+        title="Image Screen" 
+        style={styles.buttonComponent}
+        />
     </View>
   );
 };
@@ -20,6 +26,9 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
+  },
+  cardComponent: {
+    marginVertical: 10
   }
 });
 
