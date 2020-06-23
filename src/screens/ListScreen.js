@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 
 const ListScreen = () => {
-  const newList = [
+  const newLists = [
     { name: "book 1", age: 20 },
     { name: "book 2", age: 45 },
     { name: "book 3", age: 32 },
@@ -15,8 +15,8 @@ const ListScreen = () => {
   ]
   return (
     <FlatList 
-      keyExtractor= {key => newList.name}
-      data={newList}
+      keyExtractor= {(newList) => newLists.name}
+      data={newLists}
       renderItem={({ item }) => {
         return <Text style={style.textStyle}>Name: {item.name} - Age: {item.age}</Text>
       }}
@@ -25,9 +25,9 @@ const ListScreen = () => {
 }
 
 const style = StyleSheet.create({
-  textStyle = {
+  textStyle : {
     marginVertical: 50
-  }
+  },
 
 })
 
