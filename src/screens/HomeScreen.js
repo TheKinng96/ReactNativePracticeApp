@@ -29,6 +29,11 @@ const HomeScreen = ({ navigation }) => {
         title="Color" 
         style={styles.buttonComponent}
         />
+      <Button 
+        onPress={() => navigation.navigate('Square')}
+        title="Square" 
+        style={styles.buttonComponent}
+        />
     </View>
   );
 };
